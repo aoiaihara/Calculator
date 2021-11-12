@@ -21,6 +21,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 100px auto;
 }
 
 .calculator {
@@ -94,17 +95,25 @@ button::-moz-focus-inner {
 
 /* Responsive */
 @media screen and (min-width: 800px) {
+    body {
+    background: #97bbd3;
+    }
+
     .calculator, .input, .toggle-button, .button {
         background-color:#091921 ;
     }
 
     .input {
         text-align: right;
+        border-color: cyan;
     }
 
 }
 
 @media screen and (max-width: 600px) {
+    body {
+    background: #eec0b3;
+  }
     .calculator {
         background-color:white ;
         color: rgb(153, 143, 143); 
